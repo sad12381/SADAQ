@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SADAQ ELhoucine - Technicien Électrique</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js" defer></script>
+  <script src="index.min.js"></script>
+</head>
+<body>
+  <!-- Particle.js Background -->
+  <div id="particles-js"></div>
+
+  <!-- Navigation -->
+<nav class="navbar">
+  <ul>
+    <li><a href="#accueil" class="nav-link">Accueil</a></li>
+    <li><a href="#competences" class="nav-link">Compétences</a></li>
+    <li><a href="#langues" class="nav-link">Langues</a></li>
+    <li><a href="#parcours" class="nav-link">Parcours</a></li>
+    <li><a href="#temoignages" class="nav-link">Témoignages</a></li>
+    <li><a href="#programs" class="nav-link">Programmes</a></li>
+    <li><a href="#languages" class="nav-link">Langages</a></li>
+    <li><a href="#linux" class="nav-link">Linux</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
+</nav>
+ <!-- Accueil Section -->
+<section id="accueil" class="accueil-section">
+  <div class="hero-content">
+    <h1 class="animated-heading">Bonjour, je suis <span class="highlight">SADAQ ELhoucine</span></h1>
+    <p class="tagline">Je suis  <span class="typing-animation"></span></p>
+    <div class="cta-buttons">
+      <a href="#competences" class="cta-button">Voir Mes Compétences</a>
+      <a href="cv.pdf" download class="cta-button secondary">Télécharger Mon CV</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="pr1.png" alt="Votre Image">
+  </div>
+</section>
+<!-- Floating Button -->
+<div class="floating-buttons">
+  <button class="floating-button game-button" title="Go to Game">
+    <i class="fas fa-gamepad"></i>
+  </button>
+  <button class="floating-button contact-button" title="Go to Contact">
+    <i class="fas fa-envelope"></i>
+  </button>
+</div>
+<!-- Mini Game Section -->
+<section id="minigame" class="minigame-section">
+  <h2>Jouez à un Petit Jeu!</h2>
+  <div class="game-container">
+    <div class="game-board">
+      <!-- Cards will be dynamically generated here -->
+    </div>
+    <p class="game-message">Trouvez les paires de cartes correspondantes!</p>
+    <!-- Add the reset button here -->
+    <button id="reset-game" class="reset-button">Rejouer</button>
+  </div>
+</section>
+
+<!-- Confetti Canvas for Celebration Effect -->
+<canvas id="confetti-canvas"></canvas>
+
+ <!-- Compétences Section -->
+<section id="competences" class="competences-section">
+  <h2>Mes Compétences</h2>
+  <div class="competences-grid">
+    <div class="competence">
+      <div class="skill-icon">
+        <i class="fas fa-bolt"></i> <!-- Icon for Électricité Industrielle -->
+      </div>
+      <h3>Électricité Industrielle</h3>
+      <div class="circular-progress" data-progress="90">
+        <span class="progress-value">0%</span>
+      </div>
+    </div>
+    <div class="competence">
+      <div class="skill-icon">
+        <i class="fas fa-cogs"></i> <!-- Icon for Automatisme -->
+      </div>
+      <h3>Automatisme</h3>
+      <div class="circular-progress" data-progress="85">
+        <span class="progress-value">0%</span>
+      </div>
+    </div>
+    <div class="competence">
+      <div class="skill-icon">
+        <i class="fas fa-tools"></i> <!-- Icon for Maintenance Électrique -->
+      </div>
+      <h3>Maintenance Électrique</h3>
+      <div class="circular-progress" data-progress="95">
+        <span class="progress-value">0%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Language Section -->
+<section id="langues" class="langues-section">
+  <h2>Langues Parlées</h2>
+  <div class="langues-grid">
+    <!-- French Flag -->
+    <div class="langue">
+      <div class="language-icon">
+        <img src="flags/french-flag.png" alt="French Flag" class="flag-icon">
+      </div>
+      <h3>Français</h3>
+      <div class="circular-progress" data-progress="80">
+        <span class="progress-value">0%</span>
+      </div>
+    </div>
+    <!-- Arabic Flag -->
+    <div class="langue">
+      <div class="language-icon">
+        <img src="flags/arabic-flag.png" alt="Arabic Flag" class="flag-icon">
+      </div>
+      <h3>Arabe</h3>
+      <div class="circular-progress" data-progress="100">
+        <span class="progress-value">0%</span>
+      </div>
+    </div>
+    <!-- English Flag -->
+    <div class="langue">
+      <div class="language-icon">
+        <img src="flags/english-flag.png" alt="English Flag" class="flag-icon">
+      </div>
+      <h3>Anglais</h3>
+      <div class="circular-progress" data-progress="95">
+        <span class="progress-value">0%</span>
+      </div>
+    </div>
+    <!-- Spanish Flag -->
+    <div class="langue">
+      <div class="language-icon">
+        <img src="flags/spanish-flag.png" alt="Spanish Flag" class="flag-icon">
+      </div>
+      <h3>Espagnol</h3>
+      <div class="circular-progress" data-progress="50">
+        <span class="progress-value">0%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Programs and Tools Section -->
+<section id="programs" class="programs-section">
+  <h2>Programmes et Outils</h2>
+  <div class="programs-grid">
+    <div class="program">
+      <img src="logos/caneco-bt.png" alt="ARDUINO IDE" class="program-logo">
+      <h3>ARDUINO IDE</h3>
+      <div class="skill-level">Avancé</div>
+    </div>
+    <div class="program">
+      <img src="logos/PLC.png" alt="TIA-PORTAL" class="program-logo">
+      <h3>TIA-PORTAL</h3>
+      <div class="skill-level">Avancé</div>
+    </div>
+    <div class="program">
+      <img src="logos/autodac-electrical.png" alt="Autodac Electrical Logo" class="program-logo">
+      <h3>Autocad Electrical</h3>
+      <div class="skill-level">Intermédiaire</div>
+    </div>
+    <div class="program">
+      <img src="logos/isis-proteus.png" alt="ISIS Proteus Logo" class="program-logo">
+      <h3>ISIS Proteus</h3>
+      <div class="skill-level">Expert</div>
+    </div>
+     <div class="program">
+      <img src="logos/FESTO.png" alt="FLUIDSIM" class="program-logo">
+      <h3>FLUIDSIM</h3>
+      <div class="skill-level">Avancé</div>
+    </div>
+    <!-- Add more programs as needed -->
+  </div>
+</section>
+
+<!-- Programming Languages Section -->
+<section id="languages" class="languages-section">
+  <h2>Langages de Programmation</h2>
+  <div class="languages-grid">
+    <div class="language">
+      <img src="logos/html.png" alt="HTML Logo" class="language-logo">
+      <h3>HTML</h3>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 90%;">90%</div>
+      </div>
+    </div>
+    <div class="language">
+      <img src="logos/css.png" alt="CSS Logo" class="language-logo">
+      <h3>CSS</h3>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 90%;">90%</div>
+      </div>
+    </div>
+    <div class="language">
+      <img src="logos/javascript.png" alt="JavaScript Logo" class="language-logo">
+      <h3>JavaScript</h3>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 80%;">80%</div>
+      </div>
+    </div>
+    <div class="language">
+      <img src="logos/python.png" alt="Python Logo" class="language-logo">
+      <h3>Python</h3>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 75%;">75%</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Linux Proficiency Section -->
+<section id="linux" class="linux-section">
+  <h2>Systèmes Linux</h2>
+  <div class="linux-content">
+    <img src="logos/linux.png" alt="Linux Logo" class="linux-logo">
+    <p>Je suis un professionnel des systèmes Linux, avec une expertise dans l'administration, la configuration et la gestion des serveurs Linux.</p>
+  </div>
+</section>
+<!-- Parcours Section -->
+<section id="parcours" class="parcours-section">
+  <h2>Mon Parcours</h2>
+  <div class="timeline">
+     <!-- Timeline Item 1 -->
+     <div class="timeline-item">
+      <div class="timeline-date">2022</div>
+      <div class="timeline-content">
+        <h3>CACES® R489 🚧</h3>
+        <p>Maîtriser la conduite des chariots de manutention automoteur à conducteur porté d'une ou plusieurs catégories conformément à la recommandation R489.</p>
+      </div>
+    </div>
+    <!-- Timeline Item 2 -->
+    <div class="timeline-item">
+      <div class="timeline-date">2023</div>
+      <div class="timeline-content">
+        <h3>baccalauréat  Sciences et Technologies Électriques 📘</h3>
+        <p>Obtention de mon baccalauréat en électricité industrielle.</p>
+      </div>
+    </div>
+     <!-- Timeline Item 3 -->
+     <div class="timeline-item">
+      <div class="timeline-date">2024</div>
+      <div class="timeline-content">
+        <h3>Formation aux premiers secours ⛑️</h3>
+        <p>exécuter correctement les gestes de premiers secours.</p>
+      </div>
+    </div>
+    <!-- Timeline Item 4 -->
+    <div class="timeline-item">
+      <div class="timeline-date">2025</div>
+      <div class="timeline-content">
+        <h3>1ère Année, Technicien Spécialisé 📗</h3>
+        <p>installation et  maintenance des systèmes électriques, ce qui me prépare à des missions techniques dans des environnements industriels variés.</p>
+      </div>
+    </div>
+    <!-- Add more timeline items as needed -->
+  </div>
+</section>
+  <!-- Témoignages Section -->
+  <section id="temoignages" class="temoignages-section">
+    <h2>Témoignages</h2>
+    <div class="temoignages-grid">
+      <div class="temoignage">
+        <p>"ELhoucine est un technicien très compétent et passionné par son travail."</p>
+        <h3>- Client Satisfait</h3>
+      </div>
+      <div class="temoignage">
+        <p>"Il a une excellente maîtrise des systèmes électriques et une grande capacité d'adaptation."</p>
+        <h3>- Formateur, Cités des Métiers et des Compétences</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contactez-Moi</h2>
+    <div class="contact-icons">
+      <a href="mailto:www.gamersad@gmail.com" class="contact-icon" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/elhoucine-sadaq-a46645347/" class="contact-icon" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://wa.me/212621348257" class="contact-icon" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 SADAQ ELhoucine. Tous droits réservés.</p>
+  </footer>
+  
+</body>
+</html>
