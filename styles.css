@@ -774,3 +774,143 @@ footer {
 .flag-icon:hover, .language-icon:hover {
   transform: scale(1.2); /* Slightly enlarge on hover */
 }
+/* Add these to your existing styles.css */
+
+/* Improved Mobile Navigation */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 0;
+    height: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .navbar ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 0;
+  }
+
+  .navbar ul li {
+    margin: 5px 8px;
+  }
+
+  .navbar ul li a {
+    font-size: 0.9rem;
+    padding: 5px 8px;
+  }
+
+  /* Add space for fixed navbar */
+  body {
+    padding-top: 70px;
+  }
+
+  /* Adjust hero section for mobile */
+  .accueil-section {
+    padding-top: 70px;
+    min-height: auto;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-content {
+    margin-top: 20px;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .hero-image img {
+    max-width: 250px;
+    margin-top: 20px;
+  }
+
+  .animated-heading {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+  }
+
+  .tagline {
+    font-size: 1.3rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-button {
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 80%;
+  }
+
+  /* Adjust game board for mobile */
+  .game-board {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    width: 70px;
+    height: 70px;
+    font-size: 1.5rem;
+  }
+
+  /* Timeline adjustments */
+  .timeline-item {
+    padding-left: 20px;
+  }
+
+  /* Skills sections */
+  .competences-grid, .langues-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Programs and languages */
+  .programs-grid, .languages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Floating buttons */
+  .floating-buttons {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .floating-button {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Even smaller devices */
+@media (max-width: 480px) {
+  .animated-heading {
+    font-size: 1.8rem;
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+  }
+
+  .navbar ul li a {
+    font-size: 0.8rem;
+    padding: 3px 6px;
+  }
+
+  .programs-grid, .languages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .circular-progress {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Prevent horizontal scrolling */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
